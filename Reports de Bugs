@@ -31,6 +31,8 @@ ID: IMP-001
 
 *Prioridade: Baixa
 
+*Pré-condição: Nula.
+
 *Título: Mensagem de erro de login não informa claramente qual campo está incorreto
 
 *Passos para reproduzir:
@@ -45,5 +47,3 @@ Resultado Atual
 Sugestão
 
 - Informar se o erro ocorreu no usuário, na senha ou em ambos os campos.
-
-Mensagem genérica:d
