@@ -1,0 +1,49 @@
+ID: BUG-001
+
+*Título: Sistema permite finalizar checkout com sobrenome contendo apenas espaços
+
+*Severidade: Média
+
+*Prioridade: Média
+
+*Pré-condição: Usuário logado.
+
+*Passos para reproduzir:
+1.Adicionar um produto ao carrinho.
+2.Acessar o carrinho.
+3.Clicar em "Checkout".
+4.Preencher:
+5.First Name: Miguel
+6.Last Name: " " (apenas espaços)
+7.Clicar em Continue.
+
+Resultado Esperado
+
+- O sistema deve exibir uma mensagem de validação informando que o sobrenome é obrigatório.
+
+Resultado Obtido
+
+- O sistema aceita o campo e permite continuar o checkout.
+___________________________________________________________________________________________________________________________________________
+ID: IMP-001
+
+*Severidade: Baixa
+
+*Prioridade: Baixa
+
+*Título: Mensagem de erro de login não informa claramente qual campo está incorreto
+
+*Passos para reproduzir:
+1.Informar usuário correto.
+2.Informar senha incorreta.
+3.Clicar em Login.
+
+Resultado Atual
+
+- Username and password do not match any user in this service
+
+Sugestão
+
+- Informar se o erro ocorreu no usuário, na senha ou em ambos os campos.
+
+Mensagem genérica:d
