@@ -1,14 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
+Navegador = webdriver.Chrome()
 
-driver.get("https://www.saucedemo.com")
+Navegador.get("https://www.saucedemo.com")
 
-driver.find_element(By.ID,"user-name").send_keys("standard_user")
-driver.find_element(By.ID,"password").send_keys("secret_sauce")
-driver.find_element(By.ID,"login-button").click()
+Navegador.find_element(By.ID,"user-name").send_keys("standard_user")
+Navegador.find_element(By.ID,"password").send_keys("secret_sauce")
+Navegador.find_element(By.ID,"login-button").click()
 
-assert "inventory" in driver.current_url
+assert "inventory" in Navegador.current_url
 
-driver.quit()
+Navegador.quit()
